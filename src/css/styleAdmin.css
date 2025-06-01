@@ -1,0 +1,276 @@
+.root {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Header */
+.header-box {
+    -fx-background-color: #003366; /* bleu marine */
+    -fx-padding: 15px;
+    -fx-alignment: center;
+}
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Stat cards */
+.stats-box {
+    -fx-background-color: transparent;
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+}
+
+.card {
+    -fx-background-color: #CC7722; /* ocre */
+    -fx-padding: 15px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5, 0.3, 0, 1);
+    -fx-pref-width: 200px;
+    -fx-pref-height: 100px;
+    -fx-alignment: center;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.card-label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+
+/* Bottom Menu */
+.bottom-menu {
+    -fx-background-color: #8B4513; /* terre de Sienne brûlée */
+    -fx-padding: 10px;
+    -fx-spacing: 20px;
+	-fx-min-heigt: 150px;
+    -fx-alignment: center;
+	-fx-cursor : hand;
+}
+
+.menu-button {
+    -fx-background-color: #000080; /* navy */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 18px;
+}
+
+.menu-button:hover {
+    -fx-background-color: #912424;
+}
+
+
+/* style.css */
+
+#page-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 12px 0;
+    -fx-background-color: rgba(44, 62, 80, 0.1);
+    -fx-border-color: #2c3e50;
+    -fx-border-width: 0 0 2px 0;
+}
+.page-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 12px 0;
+    -fx-background-color: rgba(44, 62, 80, 0.1);
+    -fx-border-color: #2c3e50;
+    -fx-border-width: 0 0 2px 0;
+}
+
+
+.table-view {
+    -fx-pref-height: 400px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 2);
+}
+
+.table-view .column-header {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 12px;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #f0f0f0 transparent;
+    -fx-border-width: 1px;
+    -fx-padding: 8px;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #fafafa;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #f5f5f5;
+    -fx-cursor: hand;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #333333; /* couleur du texte */
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+	
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #e8f0fe;
+    -fx-text-fill: -fx-text-background-color;
+}
+
+.table-view .scroll-bar:vertical {
+    -fx-pref-width: 12px;
+}
+
+.table-view .scroll-bar:horizontal {
+    -fx-pref-height: 12px;
+}
+
+
+.action-button {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 10px 18px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0, 0, 2);
+}
+
+.action-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #2980b9, #1f669d);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+#back-button {
+    -fx-background-color: linear-gradient(to bottom, #95a5a6, #7f8c8d);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 5px;
+	-fx-cursor: hand;
+}
+
+.main-layout {
+    -fx-background-color: #ecf0f1;
+    -fx-padding: 15px;
+}
+.form-root {
+    -fx-background-color: #ffffff;
+    -fx-padding: 25px;
+    -fx-spacing: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+    -fx-background-radius: 8px;
+}
+
+.form-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 14px;
+    -fx-padding: 0 0 5px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 2, 0, 0, 1);
+}
+
+.form-field {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #e0e0e0;
+    -fx-min-width: 300px;
+    -fx-max-width: 300px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px;
+    -fx-font-size: 13px;
+    -fx-transition: all 0.3s ease;
+}
+
+.form-field:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #2196F3;
+    -fx-effect: dropshadow(gaussian, rgba(33,150,243,0.2), 4, 0, 0, 0);
+}
+
+.form-button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 25px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(33,150,243,0.3), 4, 0, 0, 2);
+    -fx-transition: all 0.2s ease;
+}
+
+.form-button:hover {
+    -fx-background-color: #1976D2;
+    -fx-effect: dropshadow(gaussian, rgba(33,150,243,0.4), 6, 0, 0, 3);
+    -fx-translate-y: -1px;
+}
+
+.form-button:pressed {
+    -fx-background-color: #1565C0;
+    -fx-translate-y: 1px;
+}
+
+.scroll-pane {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a237e;
+    -fx-padding: 15px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 3, 0, 0, 1);
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 0 2px 0;
+    -fx-margin: 0 0 15px 0;
+}
+
+
+.search-field {
+    -fx-background-color: white;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 8px 15px;
+	-fx-paddint-bottom: 10px;
+    -fx-font-size: 13px;
+    -fx-pref-width: 150px;
+    -fx-margin: 10px 0;
+}
+
+.search-field:focused {
+    -fx-border-color: #2196F3;
+    -fx-effect: dropshadow(gaussian, rgba(33,150,243,0.2), 4, 0, 0, 0);
+}
