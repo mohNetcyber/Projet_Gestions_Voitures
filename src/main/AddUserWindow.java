@@ -114,7 +114,7 @@ public class AddUserWindow {
         });
 
 
-        cancelButton.setOnAction(e -> window.close());
+        cancelButton.setOnAction(e -> windowAdmin.close());
         ScrollPane sp =new ScrollPane(gridAdmin);
         sp.getStyleClass().add("scroll-pane");
         Scene sceneAdmin = new Scene(sp, 500, 400);
@@ -143,15 +143,16 @@ public class AddUserWindow {
         TextField loginField = new TextField();
         loginField.getStyleClass().add("form-field");
         PasswordField passwordField = new PasswordField();
+        passwordField.getStyleClass().add("form-field");
 
         // Ajout au grid
-        grid.add(new Label("Nom :"), 0, 0);
+        grid.add(createLabel("Nom :"), 0, 0);
         grid.add(nomField, 1, 0);
-        grid.add(new Label("Prénom :"), 0, 1);
+        grid.add(createLabel("Prénom :"), 0, 1);
         grid.add(prenomField, 1, 1);
-        grid.add(new Label("Login :"), 0, 2);
+        grid.add(createLabel("Login :"), 0, 2);
         grid.add(loginField, 1, 2);
-        grid.add(new Label("Mot de passe :"), 0, 3);
+        grid.add(createLabel("Mot de passe :"), 0, 3);
         grid.add(passwordField, 1, 3);
 
         // Boutons
@@ -202,7 +203,7 @@ public class AddUserWindow {
         sp.getStyleClass().add("scroll-pane");
         
         Scene scene = new Scene(sp, 400, 300);
-        scene.getStylesheets().add("/css/style.css");
+        scene.getStylesheets().add(getClass().getResource("/css/style.css").toExternalForm());
         window.setScene(scene);
         CustomStage custom = new CustomStage();
         custom.decorate(window, scene, "Formulaire d'incription", false, 400, 300, false);
